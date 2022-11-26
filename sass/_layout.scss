@@ -12,20 +12,10 @@
     border-bottom: 0.1rem solid var(--color-grey-light-2);
     display: flex;
     justify-content: space-between;
-
-    .profile-container {
-      display: flex;
-      gap: 2px;
-    }
-
-    .profile-img {
-      height: 2.8rem;
-    }
   }
+
   &--content {
     display: flex;
-    // background-color: purple;
-    // height: 100%;
 
     .sidebar {
       //   min-height: 90%;

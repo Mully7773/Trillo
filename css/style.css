@@ -52,13 +52,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.container--header .profile-container {
-  display: flex;
-  gap: 2px;
-}
-.container--header .profile-img {
-  height: 2.8rem;
-}
 .container--content {
   display: flex;
 }
@@ -70,6 +63,10 @@ body {
 .container--content .hotel-view {
   background-color: var(--color-white);
   flex: 1;
+}
+
+.logo {
+  height: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

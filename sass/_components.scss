@@ -1,3 +1,21 @@
 .logo {
   height: 3rem;
 }
+
+.search__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.user-nav {
+  display: flex;
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__user-photo {
+    width: 2.5rem;
+  }
+}

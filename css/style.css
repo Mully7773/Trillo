@@ -160,4 +160,30 @@ body {
   border-radius: 50%;
 }
 
+.sidebar {
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  color: var(--color-white);
+  justify-content: space-between;
+}
+.sidebar-nav {
+  list-style: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.sidebar-nav__item {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  background-color: green;
+  padding: 1.2rem 0;
+}
+.sidebar-nav__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--color-white);
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -69,7 +69,7 @@ body {
 
 .logo {
   height: 3.25rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .search {
@@ -117,18 +117,35 @@ body {
 
 .user-nav {
   display: flex;
+  align-self: stretch;
+  align-items: stretch;
+}
+.user-nav > * {
+  padding: 0 2rem;
+  cursor: pointer;
+  display: flex;
   align-items: center;
-  gap: 2.5rem;
+}
+.user-nav > *:hover {
+  background-color: var(--color-grey-light-2);
+}
+.user-nav__icon-box {
+  position: relative;
 }
 .user-nav__icon {
   width: 2.25rem;
   height: 2.25rem;
+  fill: var(--color-grey-dark-2);
 }
 .user-nav__notification {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.1rem;
   background-color: var(--color-primary);
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
   padding: 0.8rem;
+  font-size: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,16 +153,11 @@ body {
   color: var(--color-white);
 }
 .user-nav__user {
-  display: flex;
-  align-items: center;
   gap: 1.2rem;
 }
 .user-nav__user-photo {
   width: 3.75rem;
   border-radius: 50%;
-}
-.user-nav__user-name {
-  margin-right: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@
 
 .logo {
   height: 3.25rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 // Search
@@ -64,22 +64,43 @@
 
 .user-nav {
   display: flex;
-  align-items: center;
-  gap: 2.5rem;
+  // Note the double use
+  align-self: stretch;
+  align-items: stretch;
+
+  // Selects all direct children of user.nav
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    // This is needed for hover effect to apply to entire box - or you can use align items stretch on .user-nav
+    // height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
 
   &__icon-box {
+    position: relative;
   }
 
   &__icon {
     width: 2.25rem;
     height: 2.25rem;
+    fill: var(--color-grey-dark-2);
   }
 
   &__notification {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
     background-color: var(--color-primary);
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.75rem;
+    height: 1.75rem;
     padding: 0.8rem;
+    font-size: 0.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,17 +109,12 @@
   }
 
   &__user {
-    display: flex;
-    align-items: center;
     gap: 1.2rem;
   }
 
   &__user-photo {
     width: 3.75rem;
     border-radius: 50%;
-  }
-
-  &__user-name {
-    margin-right: 3rem;
+    // margin-left: 1rem;
   }
 }

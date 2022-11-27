@@ -165,23 +165,27 @@ body {
 }
 
 .sidebar-nav {
+  margin-top: 3.5rem;
   color: var(--color-white);
   list-style: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
-.sidebar-nav__item {
-  background-color: green;
-  padding: 1.2rem 0;
+.sidebar-nav__item::before {
+  content: "";
 }
 .sidebar-nav__link:link, .sidebar-nav__link:visited {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-greylight-1);
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 3rem;
 }
 .sidebar-nav__icon {
   width: 1.75rem;
   height: 1.75rem;
-  fill: var(--color-white);
+  fill: currentColor;
+  margin-right: 2rem;
 }
 
 .copyright {

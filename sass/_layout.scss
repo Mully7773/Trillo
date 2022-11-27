@@ -7,13 +7,13 @@
   box-shadow: var(--shadow-dark);
 
   &--header {
+    font-size: 1.4rem;
     height: 7rem;
     background-color: var(--color-white);
     border-bottom: 0.1rem solid var(--color-grey-light-2);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2.4rem;
   }
 
   &--content {

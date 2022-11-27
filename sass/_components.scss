@@ -3,22 +3,39 @@
 
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 // Search
 
 .search {
-  position: relative;
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  // This property is important for the container to grow out to the sides when we focus the search container
+  justify-content: center;
 
   // background-color: var(--color-grey-light-1);
   &__input {
-    width: 50rem;
+    width: 90%;
+    font-family: inherit;
+    font-size: inherit;
     border: none;
     background-color: var(--color-grey-light-2);
-    padding: 1.2rem;
-    border-radius: 4rem;
+    padding: 0.7rem 2rem;
+    border-radius: 100rem;
+    color: inherit;
+    transition: all 0.2s;
+    margin-right: -3.25rem;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+    }
 
     &::placeholder {
+      font-weight: 200;
       color: var(--color-grey-light-4);
     }
   }
@@ -26,14 +43,19 @@
   &__button {
     border: none;
     background: transparent;
-    position: absolute;
-    top: 1.1rem;
-    right: 1.4rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
 
   &__icon {
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
     fill: var(--color-grey-dark-3);
   }
 }
@@ -77,5 +99,6 @@
   }
 
   &__user-name {
+    margin-right: 3rem;
   }
 }

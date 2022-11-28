@@ -204,9 +204,19 @@
 }
 
 .hotel-overview {
+  padding-left: 2.4rem;
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+  border-bottom: 0.1rem solid var(--color-grey-light-2);
+  // padding: 0.5rem 1.8rem;
   &__heading {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
   }
 
   &__stars {
@@ -223,15 +233,38 @@
   }
 
   &__location {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
   }
 
   .btn-inline {
+    font-family: inherit;
+    color: var(--color-primary);
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.2rem solid var(--color-primary);
+    cursor: pointer;
   }
 
   &__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    align-self: stretch;
+    padding: 0.8rem 2rem;
+
+    & > * {
+      height: 100%;
+    }
   }
 
   &__rating-average {
+    font-size: 2.2rem;
   }
 
   &__rating-count {

@@ -218,4 +218,14 @@ body {
   color: var(--color-grey-light-4);
 }
 
+.gallery {
+  display: flex;
+  margin: auto;
+  flex: 1;
+}
+.gallery__img {
+  width: 33.34%;
+  flex-grow: 1;
+}
+
 /*# sourceMappingURL=style.css.map */

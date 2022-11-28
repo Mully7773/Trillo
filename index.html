@@ -98,21 +98,59 @@
         </nav>
         <main class="hotel-view">
           <div class="gallery">
-            <img
-              src="./img/hotel-1.jpg"
-              alt="Hotel at night with pool"
-              class="gallery__img"
-            />
-            <img
-              src="./img/hotel-2.jpg"
-              alt="Hotel during day with pool"
-              class="gallery__img"
-            />
-            <img
-              src="./img/hotel-3.jpg"
-              alt="Hotel during day with beautiful view"
-              class="gallery__img"
-            />
+            <figure class="gallery__item">
+              <img
+                src="./img/hotel-1.jpg"
+                alt="Hotel at night with pool"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./img/hotel-2.jpg"
+                alt="Hotel during day with pool"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./img/hotel-3.jpg"
+                alt="Hotel during day with beautiful view"
+                class="gallery__img"
+              />
+            </figure>
+          </div>
+          <div class="hotel-overview">
+            <h1 class="hotel-overview__heading">Hotel Las Palmas</h1>
+            <div class="hotel-overview__stars">
+              <svg class="overview__icon-star">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="hotel-overview__location">
+              <svg class="overview__icon-location">
+                <use href="./img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">Albufeira, Portugal</button>
+
+              <div class="hotel-overview__rating">
+                <div class="hotel-overview__rating-average">8.6</div>
+                <div class="hotel-overview__rating-count">429 votes</div>
+              </div>
+            </div>
           </div>
         </main>
       </div>

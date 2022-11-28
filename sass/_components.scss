@@ -196,10 +196,9 @@
 
 .gallery {
   display: flex;
-  margin: auto;
-  flex: 1;
   &__img {
-    width: 33.34%;
-    flex-grow: 1;
+    width: 100%;
+    // Eliminates the small space below the image when left as an inline element
+    display: block;
   }
 }

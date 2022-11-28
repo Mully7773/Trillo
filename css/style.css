@@ -220,12 +220,10 @@ body {
 
 .gallery {
   display: flex;
-  margin: auto;
-  flex: 1;
 }
 .gallery__img {
-  width: 33.34%;
-  flex-grow: 1;
+  width: 100%;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

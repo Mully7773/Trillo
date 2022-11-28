@@ -226,4 +226,17 @@ body {
   display: block;
 }
 
+.hotel-overview {
+  display: flex;
+  justify-content: space-between;
+}
+.hotel-overview__stars {
+  margin-right: auto;
+}
+.hotel-overview__icon-star, .hotel-overview__icon-location {
+  height: 1.75rem;
+  width: 1.75rem;
+  fill: var(--color-primary);
+}
+
 /*# sourceMappingURL=style.css.map */

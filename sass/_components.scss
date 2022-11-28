@@ -202,3 +202,38 @@
     display: block;
   }
 }
+
+.hotel-overview {
+  display: flex;
+  justify-content: space-between;
+  &__heading {
+  }
+
+  &__stars {
+    // flex: 1;
+    // Setting the margin-right to auto is better than setting flex grow to 1 in this case because it pushes the stars to the left but also makes the stars only take up their space and not the remaining space as flex grow would do.
+    margin-right: auto;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+  }
+
+  .btn-inline {
+  }
+
+  &__rating {
+  }
+
+  &__rating-average {
+  }
+
+  &__rating-count {
+  }
+}

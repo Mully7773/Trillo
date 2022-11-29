@@ -10,7 +10,7 @@
     font-size: 1.4rem;
     height: 7rem;
     background-color: var(--color-white);
-    border-bottom: 0.1rem solid var(--color-grey-light-2);
+    border-bottom: var(--border-bottom-grey);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,4 +35,23 @@
       flex: 1;
     }
   }
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--border-bottom-grey);
+}
+
+.description {
+  background-color: var(--color-white);
+  // Usually when we set a percentage value here, we set the other two to '0'
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+}
+
+.user-reviews {
+  background-color: green;
+  flex: 1;
 }

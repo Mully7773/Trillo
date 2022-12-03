@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
@@ -385,15 +386,21 @@ body {
 }
 
 .review {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 3rem;
   background-color: var(--color-white);
   box-shadow: var(--shadow-light);
+  overflow: hidden;
 }
 .review:not(:last-child) {
   margin-bottom: 3.5rem;
+}
+.review__text {
+  z-index: 100;
+  position: relative;
 }
 .review__user-info {
   display: flex;
@@ -423,6 +430,17 @@ body {
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--color-primary);
+}
+.review::before {
+  content: "“";
+  position: absolute;
+  top: -2.75rem;
+  left: -1rem;
+  font-size: 20rem;
+  color: var(--color-grey-light-2);
+  line-height: 1;
+  font-family: sans-serif;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

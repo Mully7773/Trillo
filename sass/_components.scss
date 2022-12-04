@@ -457,18 +457,17 @@
   }
 }
 
+// Call-to-action section
 .cta-section {
   &__heading {
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: 0.1rem;
   }
 
   &__button {
     border: none;
-    border-radius: 5rem;
-    display: inline-block;
-    padding: 1.4rem 4.2rem;
+    border-radius: 100rem;
     background-image: linear-gradient(
       to right,
       var(--color-primary-light),
@@ -477,7 +476,49 @@
     color: var(--color-white);
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
     cursor: pointer;
+    position: relative;
+    // Hides button content when it is outside of the actual button element ('Only 4 rooms left')
+    overflow: hidden;
+
+    // For common styles (all children selector)
+    & > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all 0.2s;
+    }
+
+    &--visible {
+      padding: 2rem 7.5rem;
+    }
+
+    &--invisible {
+      position: absolute;
+      left: 0;
+      // Makes the element move up exactly the size of the element
+      top: -100%;
+      // padding left and right must be set to 0 in order for the text to fit
+      padding: 2rem 0;
+    }
+    &:hover {
+      background-image: linear-gradient(
+        to left,
+        var(--color-primary-light),
+        var(--color-primary-dark)
+      );
+    }
+    &:hover &--visible {
+      transform: translateY(100%);
+    }
+    &:hover &--invisible {
+      top: 0;
+    }
+    &:focus {
+      outline: none;
+      animation: pulsate 1s infinite;
+    }
   }
 }

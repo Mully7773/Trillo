@@ -99,7 +99,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 3rem;
+  text-align: center;
+  padding: 3.5rem;
   gap: 2rem;
 }
 
@@ -463,21 +464,50 @@ body {
 }
 
 .cta-section__heading {
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 400;
-  letter-spacing: 0.1rem;
 }
 .cta-section__button {
   border: none;
-  border-radius: 5rem;
-  display: inline-block;
-  padding: 1.4rem 4.2rem;
+  border-radius: 100rem;
   background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
   color: var(--color-white);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.cta-section__button > * {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s;
+}
+.cta-section__button--visible {
+  padding: 2rem 7.5rem;
+}
+.cta-section__button--invisible {
+  position: absolute;
+  left: 0;
+  top: -100%;
+  padding: 2rem 0;
+}
+.cta-section__button:hover {
+  background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+}
+.cta-section__button:hover .cta-section__button--visible {
+  transform: translateY(100%);
+}
+.cta-section__button:hover .cta-section__button--invisible {
+  top: 0;
+}
+.cta-section__button:focus {
+  outline: none;
+  animation: pulsate 1s infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

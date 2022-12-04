@@ -23,6 +23,11 @@
   --border-bottom-grey: 0.1rem solid var(--color-grey-light-2);
 }
 
+// SASS variables for media queries
+$bp-largest: 75em; //1200px (1200 / 16 - for em)
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; // 900px
+
 *,
 *::before,
 *::after {
@@ -34,6 +39,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1 rem = 10px
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {

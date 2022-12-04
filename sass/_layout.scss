@@ -1,3 +1,5 @@
+@use "./base";
+
 .container {
   // height: 50rem;
   max-width: 120rem;
@@ -5,6 +7,13 @@
   background-color: var(--color-grey-light-1);
   margin: 8rem auto;
   box-shadow: var(--shadow-dark);
+
+  @media only screen and (max-width: base.$bp-largest) {
+    // Removes top and bottom margins so content fills 100% of viewport
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 
   &--header {
     font-size: 1.4rem;

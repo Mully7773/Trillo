@@ -28,6 +28,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -46,6 +51,13 @@ body {
   background-color: var(--color-grey-light-1);
   margin: 8rem auto;
   box-shadow: var(--shadow-dark);
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 .container--header {
   font-size: 1.4rem;
@@ -402,7 +414,7 @@ body {
   margin-left: auto;
 }
 .recommend__photo:not(:last-child) {
-  margin-right: -1.5rem;
+  margin-right: -2rem;
 }
 
 .review {

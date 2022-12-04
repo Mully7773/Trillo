@@ -1,3 +1,5 @@
+@use "./base";
+
 //
 // LOGO
 
@@ -127,10 +129,22 @@
   font-size: 1.4rem;
   text-transform: uppercase;
 
+  @media only screen and (max-width: base.$bp-medium) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+      @media only screen and (max-width: base.$bp-medium) {
+        margin: 0;
+      }
+    }
+
+    @media only screen and (max-width: base.$bp-medium) {
+      flex: 1;
     }
   }
 
@@ -171,6 +185,11 @@
     display: flex;
     align-items: center;
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: base.$bp-medium) {
+      justify-content: center;
+      padding: 2rem;
+    }
   }
 
   &__icon {
@@ -188,6 +207,10 @@
   text-align: center;
   padding: 2.5rem;
   color: var(--color-grey-light-4);
+
+  @media only screen and (max-width: base.$bp-medium) {
+    display: none;
+  }
 }
 
 // Hotel View
@@ -373,6 +396,7 @@
   }
 
   &__friends {
+    display: flex;
   }
 
   &__photo {
@@ -400,8 +424,16 @@
   background-color: var(--color-white);
   box-shadow: var(--shadow-light);
   overflow: hidden;
+
+  @media only screen and (max-width: base.$bp-medium) {
+    padding: 2rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: 3.5rem;
+    @media only screen and (max-width: base.$bp-medium) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__text {

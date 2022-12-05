@@ -23,6 +23,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: base.$bp-smallest) {
+      flex-wrap: wrap;
+      align-content: space-around;
+      height: 11rem;
+    }
   }
 
   &--content {
@@ -62,6 +68,10 @@
   @media only screen and (max-width: base.$bp-small) {
     flex-direction: column;
   }
+
+  @media only screen and (max-width: base.$bp-smallest) {
+    padding: 2.5rem;
+  }
 }
 
 .description {
@@ -100,5 +110,9 @@
 
   @media only screen and (max-width: base.$bp-medium) {
     padding: 2.5rem 0;
+  }
+
+  @media only screen and (max-width: base.$bp-smallest) {
+    padding: 2rem 0;
   }
 }

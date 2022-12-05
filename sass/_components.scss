@@ -17,6 +17,13 @@
   // This property is important for the container to grow out to the sides when we focus the search container
   justify-content: center;
 
+  @media only screen and (max-width: base.$bp-smallest) {
+    // Change order of search so it appears 'below' header and use flex-wrap on .search to bring it down
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  }
+
   // background-color: var(--color-grey-light-1);
   &__input {
     width: 90%;
@@ -256,6 +263,10 @@
       font-size: 1.8rem;
       padding: 1.25rem 2rem;
     }
+
+    @media only screen and (max-width: base.$bp-smallest) {
+      font-size: 1.2rem;
+    }
   }
 
   &__stars {
@@ -272,6 +283,11 @@
     height: 1.75rem;
     width: 1.75rem;
     fill: var(--color-primary);
+
+    @media only screen and (max-width: base.$bp-smallest) {
+      height: 1.2rem;
+      width: 1.2rem;
+    }
   }
 
   &__location {
@@ -279,6 +295,10 @@
     align-items: center;
     gap: 0.5rem;
     font-size: 1.2rem;
+
+    @media only screen and (max-width: base.$bp-smallest) {
+      font-size: 0.7rem;
+    }
   }
 
   &__rating {
@@ -295,6 +315,11 @@
       padding: 0 1.5rem;
     }
 
+    @media only screen and (max-width: base.$bp-smallest) {
+      font-size: 1.2rem;
+      padding: 0 1rem;
+    }
+
     // & > * {
     //   height: 100%;
     // }
@@ -308,6 +333,10 @@
     @media only screen and (max-width: base.$bp-small) {
       font-size: 1.8rem;
     }
+
+    @media only screen and (max-width: base.$bp-smallest) {
+      font-size: 1.4rem;
+    }
   }
 
   &__rating-count {
@@ -316,6 +345,9 @@
 
     @media only screen and (max-width: base.$bp-small) {
       // font-size: 0.5rem;
+    }
+    @media only screen and (max-width: base.$bp-smallest) {
+      font-size: 0.5rem;
     }
   }
 }
@@ -524,6 +556,9 @@
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 400;
+    @media only screen and (max-width: base.$bp-smallest) {
+      font-size: 1.8rem;
+    }
   }
 
   &__button {
@@ -544,6 +579,10 @@
     // Hides button content when it is outside of the actual button element ('Only 4 rooms left')
     overflow: hidden;
 
+    @media only screen and (max-width: base.$bp-smallest) {
+      font-size: 1.2rem;
+    }
+
     // For common styles (all children selector)
     & > * {
       display: inline-block;
@@ -554,6 +593,10 @@
 
     &--visible {
       padding: 2rem 7.5rem;
+
+      @media only screen and (max-width: base.$bp-smallest) {
+        padding: 1.8rem 6rem;
+      }
     }
 
     &--invisible {

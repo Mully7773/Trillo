@@ -213,9 +213,15 @@
 
     @media only screen and (max-width: base.$bp-small) {
       margin-right: 0;
-      margin-bottom: 0.7rem;
+      // margin-bottom: 0.7rem;
       width: 1.5rem;
       height: 1.5rem;
+    }
+  }
+
+  & span {
+    @media only screen and (max-width: base.$bp-smallest) {
+      display: none;
     }
   }
 }
@@ -238,10 +244,21 @@
 
 .gallery {
   display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  &__item {
+    overflow: hidden;
+  }
   &__img {
     width: 100%;
     // Eliminates the small space below the image when left as an inline element
     display: block;
+    transition: all 0.3s;
+    transform: scale(1);
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -436,12 +453,17 @@
     // background-image: url(../img/chevron-thin-right.svg);
     // background-size: cover;
 
-    // Newer browsers - masks
-    background-color: var(--color-primary);
-    mask-image: url(../img/chevron-thin-right.svg);
-    -webkit-mask-image: url(../img/chevron-thin-right.svg);
-    mask-size: cover;
-    -webkit-mask-size: cover;
+    // Newer browsers -
+
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-color: var(--color-primary);
+      mask-image: url(../img/chevron-thin-right.svg);
+      -webkit-mask-image: url(../img/chevron-thin-right.svg);
+      mask-size: cover;
+      -webkit-mask-size: cover;
+      // Necessary for the chevron to turn primary color
+      background-image: none;
+    }
   }
 }
 

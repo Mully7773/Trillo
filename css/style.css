@@ -374,18 +374,42 @@ body {
   display: flex;
   overflow: hidden;
   cursor: pointer;
+  transition: all 1s;
 }
 .gallery__item {
   overflow: hidden;
+  position: relative;
+}
+.gallery__caption {
+  text-transform: uppercase;
+  font-family: inherit;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: rgba(235, 47, 100, 0.6);
+  color: var(--color-white);
+  padding: 1rem 1.2rem;
+  transition: all 0.5s ease-in;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.gallery__caption--text {
+  opacity: 1 !important;
 }
 .gallery__img {
   width: 100%;
   display: block;
-  transition: all 0.3s;
+  transition: all 0.6s;
   transform: scale(1);
 }
 .gallery__img:hover {
   transform: scale(1.1);
+}
+.gallery__img:hover + figcaption {
+  transform: translateY(5rem);
 }
 
 .hotel-overview {

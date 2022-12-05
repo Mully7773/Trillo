@@ -680,3 +680,26 @@
     }
   }
 }
+
+// EXTRA - NAV Hover Menus
+
+.menu {
+  width: 35rem;
+  height: auto;
+  background-color: var(--color-grey-light-1);
+  border-radius: 1rem;
+  z-index: 9999;
+}
+
+.messages {
+  &:hover .message-container {
+    display: block;
+  }
+}
+
+.message-container {
+  // display: none;
+  position: absolute;
+  top: 95%;
+  left: -13.5rem;
+}

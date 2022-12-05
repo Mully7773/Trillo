@@ -30,19 +30,37 @@
           </button>
         </form>
         <nav class="user-nav">
-          <div class="user-nav__icon-box">
+          <div class="user-nav__icon-box notifcations">
             <svg class="user-nav__icon">
               <use href="./img/sprite.svg#icon-bookmark"></use>
             </svg>
             <span class="user-nav__notification">7</span>
           </div>
-          <div class="user-nav__icon-box">
+          <div class="user-nav__icon-box messages">
             <svg class="user-nav__icon">
               <use href="./img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">13</span>
+            <!-- Message window from hover -->
+            <div class="message-container menu">
+              <div class="message-container__header menu-header">
+                <span>Messages</span>
+                <form action="#" class="message-container__form">
+                  <input
+                    type="text"
+                    class="message-container__form-input"
+                    placeholder="Search friends"
+                  />
+                  <button class="message-container__button">
+                    <svg class="search__icon">
+                      <use href="./img/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="user-nav__user">
+          <div class="user-nav__user profile">
             <img
               src="img/user.jpg"
               alt="User photo"

@@ -119,6 +119,7 @@
 
   &__user {
     gap: 1.2rem;
+    position: relative;
   }
 
   &__user-photo {
@@ -682,6 +683,63 @@
 }
 
 // EXTRA - NAV Hover Menus
+
+.profile {
+  &:hover .profile-container {
+    display: block;
+  }
+}
+
+.profile-container {
+  // display: none;
+  position: absolute;
+  top: 95%;
+  left: -23.5rem;
+
+  &__heading {
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid var(--color-grey-light-3);
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--color-grey-light-2);
+    }
+  }
+
+  &__icon-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__chevron {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+}
+
+.profile-view-container {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
+  &__icon-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__chevron {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+}
 
 .notifications {
   &:hover .notifications-container {

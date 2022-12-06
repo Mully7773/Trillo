@@ -264,6 +264,7 @@ body {
 }
 .user-nav__user {
   gap: 1.2rem;
+  position: relative;
 }
 .user-nav__user-photo {
   width: 3.75rem;
@@ -738,6 +739,53 @@ body {
 .cta-section__button:focus {
   outline: none;
   animation: pulsate 1s infinite;
+}
+
+.profile:hover .profile-container {
+  display: block;
+}
+
+.profile-container {
+  position: absolute;
+  top: 95%;
+  left: -23.5rem;
+}
+.profile-container__heading {
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--color-grey-light-3);
+  transition: all 0.3s;
+}
+.profile-container__heading:hover {
+  background-color: var(--color-grey-light-2);
+}
+.profile-container__icon-container {
+  display: flex;
+  align-items: center;
+}
+.profile-container__chevron {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.profile-view-container {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  justify-content: space-between;
+}
+.profile-view-container:hover {
+  background-color: var(--color-grey-light-2);
+}
+.profile-view-container__icon-container {
+  display: flex;
+  align-items: center;
+}
+.profile-view-container__chevron {
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 .notifications:hover .notifications-container {

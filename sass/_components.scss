@@ -686,9 +686,10 @@
 .menu {
   width: 35rem;
   height: auto;
-  background-color: var(--color-grey-light-2);
+  background-color: var(--color-white);
   border-radius: 1rem;
   z-index: 9999;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
 }
 
 .messages {
@@ -739,20 +740,25 @@
 }
 
 .message-view-container {
+  max-height: 35rem;
+  overflow-x: hidden;
+  overflow-y: auto;
   &__friend {
   }
 
   &__user {
+    position: relative;
+
     cursor: pointer;
-    padding: 2rem 2.2rem;
+    padding: 1.5rem 2.2rem;
 
     display: flex;
     align-items: center;
     gap: 1.4rem;
     transition: all 0.3s;
     & img {
-      width: 5.6rem;
-      height: 5.6rem;
+      width: 5rem;
+      height: 5rem;
       border-radius: 100%;
     }
 
@@ -773,5 +779,13 @@
     font-size: 1.6rem;
     font-weight: 200;
     color: var(--color-primary);
+
+    &::after {
+      content: "⬤";
+      position: absolute;
+      top: 2.5rem;
+      right: 1.5rem;
+      color: var(--color-primary-dark);
+    }
   }
 }

@@ -740,6 +740,45 @@ body {
   animation: pulsate 1s infinite;
 }
 
+.notifications:hover .notifications-container {
+  display: block;
+}
+
+.notifications-container {
+  display: none;
+  position: absolute;
+  top: 95%;
+  left: -11rem;
+}
+.notifications-container__heading {
+  font-size: 3.6rem;
+  padding: 2.2rem;
+  border-bottom: 0.1rem solid var(--color-grey-light-3);
+}
+
+.notifications-view-container {
+  max-height: 35rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.notifications-view-container__user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 2.2rem;
+}
+.notifications-view-container__user img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+}
+.notifications-view-container__user:hover {
+  background-color: var(--color-grey-light-3);
+}
+.notifications-view-container__user:hover:last-child {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
 .menu {
   width: 35rem;
   height: auto;
@@ -754,6 +793,7 @@ body {
 }
 
 .message-container {
+  display: none;
   position: absolute;
   top: 95%;
   left: -17.5rem;
@@ -809,6 +849,9 @@ body {
 }
 .message-view-container__user:hover {
   background-color: var(--color-grey-light-3);
+}
+.message-view-container__user:hover:last-child {
+  border-bottom-left-radius: 1rem;
 }
 .message-view-container__user-name {
   font-size: 1.8rem;

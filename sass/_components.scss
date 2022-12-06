@@ -683,6 +683,59 @@
 
 // EXTRA - NAV Hover Menus
 
+.notifications {
+  &:hover .notifications-container {
+    display: block;
+  }
+}
+
+.notifications-container {
+  display: none;
+  position: absolute;
+  top: 95%;
+  left: -11rem;
+
+  &__heading {
+    font-size: 3.6rem;
+    padding: 2.2rem;
+    border-bottom: 0.1rem solid var(--color-grey-light-3);
+  }
+}
+
+.notifications-view-container {
+  max-height: 35rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  &__friend {
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 2.2rem;
+    & img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+    }
+    &:hover {
+      background-color: var(--color-grey-light-3);
+      &:last-child {
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+    }
+  }
+
+  &__user-info {
+  }
+
+  &__text {
+  }
+}
+
+// All menus
 .menu {
   width: 35rem;
   height: auto;
@@ -691,6 +744,7 @@
   z-index: 9999;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
 }
+//
 
 .messages {
   &:hover .message-container {
@@ -699,7 +753,7 @@
 }
 
 .message-container {
-  // display: none;
+  display: none;
   position: absolute;
   top: 95%;
   left: -17.5rem;
@@ -764,6 +818,9 @@
 
     &:hover {
       background-color: var(--color-grey-light-3);
+      &:last-child {
+        border-bottom-left-radius: 1rem;
+      }
     }
   }
 

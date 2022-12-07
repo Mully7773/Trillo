@@ -397,6 +397,11 @@ body {
   position: absolute;
   width: 100%;
 }
+@media only screen and (max-width: 31.25em) {
+  .gallery__caption {
+    font-size: 0.6rem;
+  }
+}
 .gallery__caption--text {
   opacity: 1 !important;
 }
@@ -896,6 +901,11 @@ body {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 31.25em) {
+  .profile-container__icon-container {
+    gap: 1rem;
+  }
+}
 .profile-container__chevron {
   height: 1.2rem;
   width: 1.2rem;
@@ -917,6 +927,11 @@ body {
 .profile-view-container__icon-container {
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 31.25em) {
+  .profile-view-container__icon-container {
+    gap: 1rem;
+  }
 }
 .profile-view-container__chevron {
   height: 1.2rem;

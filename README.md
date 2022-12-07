@@ -4,9 +4,29 @@ This is a fully responsive page for a fictional hotel website called 'Trillo'.
 
 ## Link
 
-Check it out here:
+Check it out here: https://trillo-nickm.netlify.app
 
 ## Screenshots
+
+![Screenshot top - desktop](./img/screenshots/desktop1.png)
+
+<br>
+
+![Screenshot top - desktop](./img/screenshots/desktop2.png)
+
+<br>
+
+![Screenshot top - desktop](./img/screenshots/desktop-messages.png)
+
+<br>
+
+![Screenshot top - desktop](./img/screenshots/desktop-profile.png)
+
+<br>
+
+![Screenshot top - desktop](./img/screenshots/mobile-view.png)
+
+<br>
 
 ## Description
 

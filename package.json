@@ -7,9 +7,9 @@
   "scripts": {
     "start": "sass --watch sass/main.scss:css/style.css",
     "compile:sass": "sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss css/style.style.comp.css --use autoprefixer -o css/style.prefix.css",
+    "prefix:css": "postcss css/style.comp.css --use autoprefixer -o css/style.prefix.css",
     "compress:css": "sass css/style.prefix.css css/compressed-style.css --style=compressed",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Nick Mullenmeister",
   "license": "ISC",
